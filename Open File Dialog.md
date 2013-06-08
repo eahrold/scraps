@@ -7,15 +7,15 @@ from Cocoa import *
 
 second, define a method like this:
 
-def openFile():
-        panel = NSOpenPanel.openPanel()
-        panel.setCanCreateDirectories_(True)
-        panel.setCanChooseDirectories_(True)
-        panel.setCanChooseFiles_(True)
-        #… there are lots of options, you see where this is going…
-         if panel.runModal() == NSOKButton:
-                    return panel.filename()
-        return 
+	def openFile():
+	        panel = NSOpenPanel.openPanel()
+	        panel.setCanCreateDirectories_(True)
+	        panel.setCanChooseDirectories_(True)
+	        panel.setCanChooseFiles_(True)
+	        #… there are lots of options, you see where this is going…
+	         if panel.runModal() == NSOKButton:
+	                    return panel.filename()
+	        return 
 
 now you can call the dialog and store it’s return value like this:
 
