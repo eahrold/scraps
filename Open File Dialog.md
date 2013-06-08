@@ -27,6 +27,6 @@ if you want to choose a directory instead of a file just use:
 
 instead of 
 
-return panel.filename()
+	return panel.filename()
 
 you can also return multiple files or filter for specific extension, I’m sure you’ll figure this out yourself.
