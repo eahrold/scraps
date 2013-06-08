@@ -3,7 +3,7 @@ Simple OpenFile Dialog in PyObjc
 Surprisingly it took me quite a while to figure out how to to this, once again turned out to be pretty simple.
 Here we go, first thing make sure Cocoa is imported
 
-from Cocoa import * 
+	from Cocoa import * 
 
 second, define a method like this:
 
@@ -19,11 +19,11 @@ second, define a method like this:
 
 now you can call the dialog and store it’s return value like this:
 
-file = openFile()
+	file = openFile()
 
 if you want to choose a directory instead of a file just use:
 
-return panel.directory()
+	return panel.directory()
 
 instead of 
 
