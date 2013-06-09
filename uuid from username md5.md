@@ -9,6 +9,7 @@ in python
 	print re.sub(r'[a-zAND0]',r'',m.hexdigest())[-5:]
 
 
-in bash
+and in bash
 
+	username=""
     "md5 -s ${username} |sed -e 's/0//g' -e 's/[a-z]//g' -e 's/\\ //g'| tail -c 6"
