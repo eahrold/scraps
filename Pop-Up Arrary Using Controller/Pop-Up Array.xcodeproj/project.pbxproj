@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE01D23917660975002EC510 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE01D23817660975002EC510 /* Cocoa.framework */; };
+		BE01D23B17660975002EC510 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE01D23A17660975002EC510 /* Python.framework */; };
+		BE01D24517660975002EC510 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE01D24317660975002EC510 /* InfoPlist.strings */; };
+		BE01D24717660975002EC510 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D24617660975002EC510 /* main.m */; };
+		BE01D24B17660975002EC510 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BE01D24917660975002EC510 /* Credits.rtf */; };
+		BE01D24D17660975002EC510 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = BE01D24C17660975002EC510 /* main.py */; };
+		BE01D24F17660975002EC510 /* AppDelegate.py in Resources */ = {isa = PBXBuildFile; fileRef = BE01D24E17660975002EC510 /* AppDelegate.py */; };
+		BE01D25217660975002EC510 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE01D25017660975002EC510 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE01D23517660975002EC510 /* Pop-Up Array.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop-Up Array.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE01D23817660975002EC510 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BE01D23A17660975002EC510 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		BE01D23D17660975002EC510 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BE01D23E17660975002EC510 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BE01D23F17660975002EC510 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE01D24217660975002EC510 /* Pop-Up Array-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Pop-Up Array-Info.plist"; path = "../Pop-Up Array/Pop-Up Array-Info.plist"; sourceTree = "<group>"; };
+		BE01D24417660975002EC510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE01D24617660975002EC510 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../Pop-Up Array/main.m"; sourceTree = "<group>"; };
+		BE01D24817660975002EC510 /* Pop-Up Array-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Pop-Up Array-Prefix.pch"; path = "../Pop-Up Array/Pop-Up Array-Prefix.pch"; sourceTree = "<group>"; };
+		BE01D24A17660975002EC510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BE01D24C17660975002EC510 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = main.py; path = "../Pop-Up Array/main.py"; sourceTree = "<group>"; };
+		BE01D24E17660975002EC510 /* AppDelegate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = AppDelegate.py; path = "../Pop-Up Array/AppDelegate.py"; sourceTree = "<group>"; };
+		BE01D25117660975002EC510 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE01D23217660975002EC510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01D23917660975002EC510 /* Cocoa.framework in Frameworks */,
+				BE01D23B17660975002EC510 /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE01D22C17660975002EC510 = {
+			isa = PBXGroup;
+			children = (
+				BE01D24017660975002EC510 /* Pop-Up Array */,
+				BE01D23717660975002EC510 /* Frameworks */,
+				BE01D23617660975002EC510 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE01D23617660975002EC510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D23517660975002EC510 /* Pop-Up Array.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE01D23717660975002EC510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D23817660975002EC510 /* Cocoa.framework */,
+				BE01D23A17660975002EC510 /* Python.framework */,
+				BE01D23C17660975002EC510 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE01D23C17660975002EC510 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D23D17660975002EC510 /* AppKit.framework */,
+				BE01D23E17660975002EC510 /* CoreData.framework */,
+				BE01D23F17660975002EC510 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BE01D24017660975002EC510 /* Pop-Up Array */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D24C17660975002EC510 /* main.py */,
+				BE01D24E17660975002EC510 /* AppDelegate.py */,
+				BE01D25017660975002EC510 /* MainMenu.xib */,
+				BE01D24117660975002EC510 /* Supporting Files */,
+			);
+			name = "Pop-Up Array";
+			path = "Pop-Up Array";
+			sourceTree = "<group>";
+		};
+		BE01D24117660975002EC510 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D24217660975002EC510 /* Pop-Up Array-Info.plist */,
+				BE01D24317660975002EC510 /* InfoPlist.strings */,
+				BE01D24617660975002EC510 /* main.m */,
+				BE01D24817660975002EC510 /* Pop-Up Array-Prefix.pch */,
+				BE01D24917660975002EC510 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE01D23417660975002EC510 /* Pop-Up Array */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE01D25517660975002EC510 /* Build configuration list for PBXNativeTarget "Pop-Up Array" */;
+			buildPhases = (
+				BE01D23117660975002EC510 /* Sources */,
+				BE01D23217660975002EC510 /* Frameworks */,
+				BE01D23317660975002EC510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pop-Up Array";
+			productName = "Pop-Up Array";
+			productReference = BE01D23517660975002EC510 /* Pop-Up Array.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE01D22D17660975002EC510 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = aapps;
+			};
+			buildConfigurationList = BE01D23017660975002EC510 /* Build configuration list for PBXProject "Pop-Up Array" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE01D22C17660975002EC510;
+			productRefGroup = BE01D23617660975002EC510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE01D23417660975002EC510 /* Pop-Up Array */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE01D23317660975002EC510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01D24517660975002EC510 /* InfoPlist.strings in Resources */,
+				BE01D24B17660975002EC510 /* Credits.rtf in Resources */,
+				BE01D24D17660975002EC510 /* main.py in Resources */,
+				BE01D24F17660975002EC510 /* AppDelegate.py in Resources */,
+				BE01D25217660975002EC510 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE01D23117660975002EC510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01D24717660975002EC510 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE01D24317660975002EC510 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE01D24417660975002EC510 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = "../Pop-Up Array";
+			sourceTree = "<group>";
+		};
+		BE01D24917660975002EC510 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE01D24A17660975002EC510 /* en */,
+			);
+			name = Credits.rtf;
+			path = "../Pop-Up Array";
+			sourceTree = "<group>";
+		};
+		BE01D25017660975002EC510 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE01D25117660975002EC510 /* en */,
+			);
+			name = MainMenu.xib;
+			path = "../Pop-Up Array";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE01D25317660975002EC510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BE01D25417660975002EC510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE01D25617660975002EC510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pop-Up Array/Pop-Up Array-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Pop-Up Array/Pop-Up Array-Info.plist";
+				PRODUCT_NAME = "Pop-Up Array";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE01D25717660975002EC510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pop-Up Array/Pop-Up Array-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Pop-Up Array/Pop-Up Array-Info.plist";
+				PRODUCT_NAME = "Pop-Up Array";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE01D23017660975002EC510 /* Build configuration list for PBXProject "Pop-Up Array" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01D25317660975002EC510 /* Debug */,
+				BE01D25417660975002EC510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE01D25517660975002EC510 /* Build configuration list for PBXNativeTarget "Pop-Up Array" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01D25617660975002EC510 /* Debug */,
+				BE01D25717660975002EC510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE01D22D17660975002EC510 /* Project object */;
+}
