@@ -9,7 +9,6 @@
 
 from Foundation import *
 from AppKit import *
-import Carbon
 import objc
 import ctypes
 import getpass
