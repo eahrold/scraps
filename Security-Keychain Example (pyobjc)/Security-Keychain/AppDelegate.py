@@ -15,7 +15,7 @@ import ctypes
 
 import AppKeychain
 
-objc
+print objc.currentBundle()
 
 class AppDelegate(NSObject):
     user = objc.IBOutlet()
