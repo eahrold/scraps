@@ -12,7 +12,7 @@ from AppKit import *
 import Carbon
 import objc, new
 import ctypes
-import uuid
+import getpass
 
 import AppKeychain
 
@@ -32,7 +32,7 @@ class AppDelegate(NSObject):
     
     
     def applicationDidFinishLaunching_(self, sender):
-        self.user.setStringValue_(str(uuid.uuid()))
+        self.user.setStringValue_(str(getpass.getuser()))
         self.site.setStringValue_(BUNDLE_ID)
         self.passwd.setStringValue_("mypass")
     
