@@ -10,7 +10,7 @@
 from Foundation import *
 from AppKit import *
 import Carbon
-import objc, new
+import objc
 import ctypes
 import getpass
 
