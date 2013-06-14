@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-Updates existing keychain internet password items with a new password.
-Usage: keychain-internet-password-update.py account_name new_password
-
-Contributed by Matt Rosenberg
+many aspects of this were taken from PyMacAdmin 
 """
 
 import ctypes
