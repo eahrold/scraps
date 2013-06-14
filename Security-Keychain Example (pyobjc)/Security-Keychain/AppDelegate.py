@@ -12,6 +12,8 @@ from AppKit import *
 import objc
 import getpass
 
+from Security import *
+
 import AppKeychain
 
 BUNDLE_ID = NSBundle.mainBundle().bundleIdentifier()
