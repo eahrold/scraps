@@ -42,7 +42,7 @@ class AppDelegate(NSObject):
         site=self.site.stringValue()
         passwd=self.passwd.stringValue()
 
-        AppKeychain.addGenericPassword(user,passwd,site)
+        AppKeychain.addGenericPassword(user,passwd)
         
 
     @objc.IBAction
@@ -51,7 +51,7 @@ class AppDelegate(NSObject):
         site=self.site.stringValue()
         passwd=self.passwd.stringValue()
         
-        psswd=AppKeychain.getGenericPassword(user,site)
+        psswd=AppKeychain.getGenericPassword(user)
         print psswd
     @objc.IBAction
 
@@ -60,7 +60,7 @@ class AppDelegate(NSObject):
         site=self.site.stringValue()
         passwd=self.passwd.stringValue()
         
-        AppKeychain.deleteGenericPassword(user,site)
+        AppKeychain.deleteGenericPassword(user)
 
 
     
