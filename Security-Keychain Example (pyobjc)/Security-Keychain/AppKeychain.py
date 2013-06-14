@@ -57,6 +57,7 @@ def getGenericPassword(account_name, service_name):
     
     if rc == -25300:
         raise KeyError('No keychain entry for generic password: service=%s, account=%s' % (service_name, account_name))
+
     elif rc != 0:
         raise RuntimeError('Unable to retrieve generic password (service=%s, account=%s): rc=%d item=%s' % (service_name, account_name, rc, item))
 
