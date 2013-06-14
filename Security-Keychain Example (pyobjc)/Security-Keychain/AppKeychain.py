@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-many aspects of this were taken from PyMacAdmin 
+many aspects of this were taken from PyMacAdmin Keychain.py
+    https://code.google.com/p/pymacadmin/source/browse/lib/PyMacAdmin/Security/Keychain.py
 """
 
 import ctypes
