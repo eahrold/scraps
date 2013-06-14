@@ -15,7 +15,7 @@ import ctypes
 
 import AppKeychain
 
-print objc.currentBundle()
+BUNDLE_ID='PyObj-c Keychain Example'
 
 class AppDelegate(NSObject):
     user = objc.IBOutlet()
@@ -32,7 +32,7 @@ class AppDelegate(NSObject):
     
     def applicationDidFinishLaunching_(self, sender):
         self.user.setStringValue_("eldon")
-        self.site.setStringValue_("my.site.com")
+        self.site.setStringValue_(BUNDLE_ID)
         self.passwd.setStringValue_("mypass")
     
     @objc.IBAction
