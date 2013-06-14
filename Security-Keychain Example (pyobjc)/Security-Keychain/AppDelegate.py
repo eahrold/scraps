@@ -12,6 +12,7 @@ from AppKit import *
 import Carbon
 import objc, new
 import ctypes
+import uuid
 
 import AppKeychain
 
