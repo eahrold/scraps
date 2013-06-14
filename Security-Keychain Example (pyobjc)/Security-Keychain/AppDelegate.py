@@ -14,8 +14,9 @@ import getpass
 
 import AppKeychain
 
-NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
-BUNDLE_ID='PyObj-C Keychain Example'
+BUNDLE_ID = NSBundle.mainBundle().bundleIdentifier()
+
+#BUNDLE_ID='PyObj-C Keychain Example'
 
 class AppDelegate(NSObject):
     user = objc.IBOutlet()
