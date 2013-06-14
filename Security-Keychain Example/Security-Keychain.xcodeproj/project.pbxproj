@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE05AA3217696CA9001B8895 /* AppKeychain.py in Resources */ = {isa = PBXBuildFile; fileRef = BE05AA3117696CA9001B8895 /* AppKeychain.py */; };
+		BEBB452C1768274800EE2415 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBB452B1768274800EE2415 /* Cocoa.framework */; };
+		BEBB452E1768274800EE2415 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBB452D1768274800EE2415 /* Python.framework */; };
+		BEBB45381768274800EE2415 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEBB45361768274800EE2415 /* InfoPlist.strings */; };
+		BEBB453A1768274800EE2415 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBB45391768274800EE2415 /* main.m */; };
+		BEBB453E1768274800EE2415 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BEBB453C1768274800EE2415 /* Credits.rtf */; };
+		BEBB45401768274800EE2415 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = BEBB453F1768274800EE2415 /* main.py */; };
+		BEBB45421768274800EE2415 /* AppDelegate.py in Resources */ = {isa = PBXBuildFile; fileRef = BEBB45411768274800EE2415 /* AppDelegate.py */; };
+		BEBB45451768274800EE2415 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEBB45431768274800EE2415 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE05AA3117696CA9001B8895 /* AppKeychain.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AppKeychain.py; sourceTree = "<group>"; };
+		BEBB45281768274800EE2415 /* Security-Keychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Security-Keychain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBB452B1768274800EE2415 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BEBB452D1768274800EE2415 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		BEBB45301768274800EE2415 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BEBB45311768274800EE2415 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEBB45321768274800EE2415 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEBB45351768274800EE2415 /* Security-Keychain-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Security-Keychain-Info.plist"; sourceTree = "<group>"; };
+		BEBB45371768274800EE2415 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEBB45391768274800EE2415 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEBB453B1768274800EE2415 /* Security-Keychain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Security-Keychain-Prefix.pch"; sourceTree = "<group>"; };
+		BEBB453D1768274800EE2415 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BEBB453F1768274800EE2415 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		BEBB45411768274800EE2415 /* AppDelegate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = AppDelegate.py; sourceTree = "<group>"; };
+		BEBB45441768274800EE2415 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEBB45251768274800EE2415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBB452C1768274800EE2415 /* Cocoa.framework in Frameworks */,
+				BEBB452E1768274800EE2415 /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEBB451F1768274800EE2415 = {
+			isa = PBXGroup;
+			children = (
+				BEBB45331768274800EE2415 /* Security-Keychain */,
+				BEBB452A1768274800EE2415 /* Frameworks */,
+				BEBB45291768274800EE2415 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEBB45291768274800EE2415 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB45281768274800EE2415 /* Security-Keychain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEBB452A1768274800EE2415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB452B1768274800EE2415 /* Cocoa.framework */,
+				BEBB452D1768274800EE2415 /* Python.framework */,
+				BEBB452F1768274800EE2415 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEBB452F1768274800EE2415 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB45301768274800EE2415 /* AppKit.framework */,
+				BEBB45311768274800EE2415 /* CoreData.framework */,
+				BEBB45321768274800EE2415 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BEBB45331768274800EE2415 /* Security-Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB453F1768274800EE2415 /* main.py */,
+				BEBB45411768274800EE2415 /* AppDelegate.py */,
+				BEBB45431768274800EE2415 /* MainMenu.xib */,
+				BEBB45341768274800EE2415 /* Supporting Files */,
+			);
+			path = "Security-Keychain";
+			sourceTree = "<group>";
+		};
+		BEBB45341768274800EE2415 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE05AA3117696CA9001B8895 /* AppKeychain.py */,
+				BEBB45351768274800EE2415 /* Security-Keychain-Info.plist */,
+				BEBB45361768274800EE2415 /* InfoPlist.strings */,
+				BEBB45391768274800EE2415 /* main.m */,
+				BEBB453B1768274800EE2415 /* Security-Keychain-Prefix.pch */,
+				BEBB453C1768274800EE2415 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEBB45271768274800EE2415 /* Security-Keychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEBB45481768274800EE2415 /* Build configuration list for PBXNativeTarget "Security-Keychain" */;
+			buildPhases = (
+				BEBB45241768274800EE2415 /* Sources */,
+				BEBB45251768274800EE2415 /* Frameworks */,
+				BEBB45261768274800EE2415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Security-Keychain";
+			productName = "Security-Keychain";
+			productReference = BEBB45281768274800EE2415 /* Security-Keychain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEBB45201768274800EE2415 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = aapps;
+			};
+			buildConfigurationList = BEBB45231768274800EE2415 /* Build configuration list for PBXProject "Security-Keychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEBB451F1768274800EE2415;
+			productRefGroup = BEBB45291768274800EE2415 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEBB45271768274800EE2415 /* Security-Keychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEBB45261768274800EE2415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBB45381768274800EE2415 /* InfoPlist.strings in Resources */,
+				BEBB453E1768274800EE2415 /* Credits.rtf in Resources */,
+				BEBB45401768274800EE2415 /* main.py in Resources */,
+				BEBB45421768274800EE2415 /* AppDelegate.py in Resources */,
+				BEBB45451768274800EE2415 /* MainMenu.xib in Resources */,
+				BE05AA3217696CA9001B8895 /* AppKeychain.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEBB45241768274800EE2415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBB453A1768274800EE2415 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEBB45361768274800EE2415 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEBB45371768274800EE2415 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEBB453C1768274800EE2415 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEBB453D1768274800EE2415 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BEBB45431768274800EE2415 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEBB45441768274800EE2415 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEBB45461768274800EE2415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEBB45471768274800EE2415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BEBB45491768274800EE2415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Security-Keychain/Security-Keychain-Prefix.pch";
+				INFOPLIST_FILE = "Security-Keychain/Security-Keychain-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEBB454A1768274800EE2415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Security-Keychain/Security-Keychain-Prefix.pch";
+				INFOPLIST_FILE = "Security-Keychain/Security-Keychain-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEBB45231768274800EE2415 /* Build configuration list for PBXProject "Security-Keychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEBB45461768274800EE2415 /* Debug */,
+				BEBB45471768274800EE2415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEBB45481768274800EE2415 /* Build configuration list for PBXNativeTarget "Security-Keychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEBB45491768274800EE2415 /* Debug */,
+				BEBB454A1768274800EE2415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEBB45201768274800EE2415 /* Project object */;
+}
