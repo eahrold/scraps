@@ -36,7 +36,7 @@ def addGenericPassword(account_name, new_password, service_name):
         updateGenericPassword(account_name, new_password, service_name)
 #        raise KeyError('Keychain item %s, for user %s already exists' % (service_name, account_name))
     
-    if rc != 0:
+    elif rc != 0:
         raise RuntimeError('Unable to Add New Keychain item for %s, and account name %s: rc=%d' % (service_name, account_name, rc))
 
     print('Added Keychain item for %s' % item)
