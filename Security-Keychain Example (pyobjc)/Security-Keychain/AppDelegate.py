@@ -10,7 +10,6 @@
 from Foundation import *
 from AppKit import *
 import objc
-import ctypes
 import getpass
 
 import AppKeychain
