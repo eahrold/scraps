@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE05AA3217696CA9001B8895 /* AppKeychain.py in Resources */ = {isa = PBXBuildFile; fileRef = BE05AA3117696CA9001B8895 /* AppKeychain.py */; };
+		BE1AF6B3176B7D5700781F1B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1AF6B2176B7D5700781F1B /* Security.framework */; };
 		BEBB452C1768274800EE2415 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBB452B1768274800EE2415 /* Cocoa.framework */; };
 		BEBB452E1768274800EE2415 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBB452D1768274800EE2415 /* Python.framework */; };
 		BEBB45381768274800EE2415 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEBB45361768274800EE2415 /* InfoPlist.strings */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		BE05AA3117696CA9001B8895 /* AppKeychain.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AppKeychain.py; sourceTree = "<group>"; };
+		BE1AF6B2176B7D5700781F1B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
 		BEBB45281768274800EE2415 /* Security-Keychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Security-Keychain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBB452B1768274800EE2415 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BEBB452D1768274800EE2415 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
@@ -43,6 +45,7 @@
 			files = (
 				BEBB452C1768274800EE2415 /* Cocoa.framework in Frameworks */,
 				BEBB452E1768274800EE2415 /* Python.framework in Frameworks */,
+				BE1AF6B3176B7D5700781F1B /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		BEBB452F1768274800EE2415 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE1AF6B2176B7D5700781F1B /* Security.framework */,
 				BEBB45301768274800EE2415 /* AppKit.framework */,
 				BEBB45311768274800EE2415 /* CoreData.framework */,
 				BEBB45321768274800EE2415 /* Foundation.framework */,
@@ -271,6 +275,10 @@
 		BEBB45491768274800EE2415 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Security-Keychain/Security-Keychain-Prefix.pch";
 				INFOPLIST_FILE = "Security-Keychain/Security-Keychain-Info.plist";
@@ -282,6 +290,10 @@
 		BEBB454A1768274800EE2415 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Security-Keychain/Security-Keychain-Prefix.pch";
 				INFOPLIST_FILE = "Security-Keychain/Security-Keychain-Info.plist";
