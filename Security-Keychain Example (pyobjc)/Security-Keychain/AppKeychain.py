@@ -3,6 +3,8 @@
 """
 many aspects of this were taken from PyMacAdmin Keychain.py
     https://code.google.com/p/pymacadmin/source/browse/lib/PyMacAdmin/Security/Keychain.py
+
+but this is a stripped down vesion to simply handle setting and retreving Keychain items for an xcode app
 """
 
 import ctypes
