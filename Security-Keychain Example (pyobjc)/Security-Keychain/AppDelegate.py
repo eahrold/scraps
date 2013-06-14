@@ -15,7 +15,7 @@ import ctypes
 
 import AppKeychain
 
-BUNDLE_ID='PyObj-c Keychain Example'
+BUNDLE_ID='PyObj-C Keychain Example'
 
 class AppDelegate(NSObject):
     user = objc.IBOutlet()
