@@ -39,11 +39,9 @@ class AppDelegate(NSObject):
         user=self.user.stringValue()
         site=self.site.stringValue()
         passwd=self.passwd.stringValue()
-        try:
-            AppKeychain.addGenericPassword(user,passwd,site)
-        except KeyError:
-            print('Keychain item already exists, updating...')
-            AppKeychain.updateGenericPassword(user,passwd,site)
+
+        AppKeychain.addGenericPassword(user,passwd,site)
+        
 
     @objc.IBAction
     def findKeychainItem_(self,sender):
