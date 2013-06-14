@@ -29,7 +29,8 @@ class AppDelegate(NSObject):
     delete = objc.IBOutlet()
     find = objc.IBOutlet()
 
-    
+    def willTerminateOnLastWindowClosed(self,sender):
+        True
     
     def applicationDidFinishLaunching_(self, sender):
         self.user.setStringValue_(getpass.getuser())
