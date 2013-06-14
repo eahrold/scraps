@@ -32,7 +32,7 @@ class AppDelegate(NSObject):
     
     
     def applicationDidFinishLaunching_(self, sender):
-        self.user.setStringValue_()
+        self.user.setStringValue_(str(uuid.uuid4()))
         self.site.setStringValue_(BUNDLE_ID)
         self.passwd.setStringValue_("mypass")
     
