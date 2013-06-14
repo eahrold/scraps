@@ -22,7 +22,6 @@ class AppDelegate(NSObject):
     passwd = objc.IBOutlet()
     
 
-    
     create = objc.IBOutlet()
     delete = objc.IBOutlet()
     find = objc.IBOutlet()
