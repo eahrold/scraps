@@ -11,7 +11,6 @@
 import objc
 import Foundation
 import AppKit
-import Security
 
 from PyObjCTools import AppHelper
 
