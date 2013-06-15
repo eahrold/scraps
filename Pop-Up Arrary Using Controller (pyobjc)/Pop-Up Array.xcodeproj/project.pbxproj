@@ -32,6 +32,7 @@
 		BE01D24C17660975002EC510 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = main.py; path = "../Pop-Up Array/main.py"; sourceTree = "<group>"; };
 		BE01D24E17660975002EC510 /* AppDelegate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = AppDelegate.py; path = "../Pop-Up Array/AppDelegate.py"; sourceTree = "<group>"; };
 		BE01D25117660975002EC510 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BEB4CD96176D30640004F38B /* Pop-Up Array.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Pop-Up Array.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		BE01D24017660975002EC510 /* Pop-Up Array */ = {
 			isa = PBXGroup;
 			children = (
+				BEB4CD96176D30640004F38B /* Pop-Up Array.entitlements */,
 				BE01D24C17660975002EC510 /* main.py */,
 				BE01D24E17660975002EC510 /* AppDelegate.py */,
 				BE01D25017660975002EC510 /* MainMenu.xib */,
@@ -270,6 +272,7 @@
 		BE01D25617660975002EC510 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Pop-Up Array/Pop-Up Array.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -283,6 +286,7 @@
 		BE01D25717660975002EC510 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Pop-Up Array/Pop-Up Array.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
