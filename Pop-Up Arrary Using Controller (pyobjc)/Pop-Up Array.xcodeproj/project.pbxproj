@@ -92,7 +92,6 @@
 				BE01D25017660975002EC510 /* MainMenu.xib */,
 				BE01D24117660975002EC510 /* Supporting Files */,
 			);
-			name = "Pop-Up Array";
 			path = "Pop-Up Array";
 			sourceTree = "<group>";
 		};
@@ -271,6 +270,7 @@
 		BE01D25617660975002EC510 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pop-Up Array/Pop-Up Array-Prefix.pch";
@@ -283,6 +283,7 @@
 		BE01D25717660975002EC510 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pop-Up Array/Pop-Up Array-Prefix.pch";
