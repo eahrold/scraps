@@ -4,3 +4,5 @@
 ["Some more python objc"](http://www.mikeash.com/pyblog/friday-qa-2009-11-20-probing-cocoa-with-pyobjc.html)
 
 ["PyMacAdmin"](https://bitbucket.org/acdha/pymacadmin)
+
+["SMJobBlessLaunchD"](http://stackoverflow.com/questions/9134841/writing-a-privileged-helper-tool-with-smjobbless)
