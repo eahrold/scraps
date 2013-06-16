@@ -5,4 +5,4 @@
 
 ["PyMacAdmin"](https://bitbucket.org/acdha/pymacadmin)
 
-["SMJobBlessLaunchD"](http://stackoverflow.com/questions/9134841/writing-a-privileged-helper-tool-with-smjobbless)
+["Lost of Info on SMJobBlessLaunchD"](http://stackoverflow.com/questions/9134841/writing-a-privileged-helper-tool-with-smjobbless)
