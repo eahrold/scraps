@@ -33,7 +33,7 @@
 
 - (IBAction)setPressed:(id)sender{
     NSLog(@"Set Pressed");
-    NSString * rc = [SSKeychain setPassword:self.passwd.stringValue forService:self.kcitem.stringValue account:self.user.stringValue];
+    BOOL * rc = [SSKeychain setPassword:self.passwd.stringValue forService:self.kcitem.stringValue account:self.user.stringValue];
 }
 
 
