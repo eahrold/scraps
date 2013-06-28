@@ -21,7 +21,7 @@
 }
 
 - (void)applicationShouldTerminateAfterLastWindowClosed{
-    return YES;
+    return;
 }
 
 @end
