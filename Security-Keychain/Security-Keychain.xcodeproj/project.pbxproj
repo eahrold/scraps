@@ -14,7 +14,6 @@
 		BE5899F3177D36D300E8970B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5899F2177D36D300E8970B /* AppDelegate.m */; };
 		BE5899F6177D36D300E8970B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5899F4177D36D300E8970B /* MainMenu.xib */; };
 		BE5899FD177D372700E8970B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5899FC177D372700E8970B /* Security.framework */; };
-		BE589A00177D38C000E8970B /* SKkit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5899FF177D38C000E8970B /* SKkit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +31,6 @@
 		BE5899F2177D36D300E8970B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BE5899F5177D36D300E8970B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BE5899FC177D372700E8970B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		BE5899FE177D38C000E8970B /* SKkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKkit.h; sourceTree = "<group>"; };
-		BE5899FF177D38C000E8970B /* SKkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKkit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +88,6 @@
 			children = (
 				BE5899F1177D36D300E8970B /* AppDelegate.h */,
 				BE5899F2177D36D300E8970B /* AppDelegate.m */,
-				BE5899FE177D38C000E8970B /* SKkit.h */,
-				BE5899FF177D38C000E8970B /* SKkit.m */,
 				BE5899F4177D36D300E8970B /* MainMenu.xib */,
 				BE5899E6177D36D300E8970B /* Supporting Files */,
 			);
@@ -177,7 +172,6 @@
 			files = (
 				BE5899EC177D36D300E8970B /* main.m in Sources */,
 				BE5899F3177D36D300E8970B /* AppDelegate.m in Sources */,
-				BE589A00177D38C000E8970B /* SKkit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
