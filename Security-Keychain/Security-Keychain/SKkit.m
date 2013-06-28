@@ -7,6 +7,7 @@
 //
 
 #import "SKkit.h"
+#import <Security/Security.h>
 
 @implementation SKkit
 
