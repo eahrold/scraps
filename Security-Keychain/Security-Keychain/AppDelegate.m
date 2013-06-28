@@ -38,8 +38,7 @@
 
 - (IBAction)getPressed:(id)sender{
     NSLog(@"Get Pressed for %@",self.user.stringValue);
-    NSString * rc = nil;
-    rc = [SSKeychain passwordForService:self.kcitem.stringValue account:self.user.stringValue;
+    NSString * rc = [SSKeychain passwordForService:self.kcitem.stringValue account:self.user.stringValue];
 
 }
 @end
