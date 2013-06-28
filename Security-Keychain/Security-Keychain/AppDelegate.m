@@ -7,6 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#include "SSKeychain.h"
+
+@interface AppDelegate()
+@property (nonatomic, assign) IBOutlet NSTextField* user;
+@property (nonatomic, assign) IBOutlet NSTextField* passwd;
+@property (nonatomic, assign) IBOutlet NSTextField* kcitem;
+@end
 
 @implementation AppDelegate
 
