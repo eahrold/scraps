@@ -38,6 +38,6 @@
 
 - (IBAction)getPressed:(id)sender{
     NSString *result = self.user.stringValue;
-    NSLog(@"Get Pressed for %@",result);
+    NSLog(@"Get Pressed for %@",self.user.stringValue);
 }
 @end
