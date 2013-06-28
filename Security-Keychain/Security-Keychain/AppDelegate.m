@@ -31,4 +31,9 @@
     return YES;
 }
 
+- (IBAction)setPressed:(id)sender{
+}
+
+- (IBAction)getPressed:(id)sender{
+}
 @end
