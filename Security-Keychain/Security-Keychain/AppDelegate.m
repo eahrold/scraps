@@ -21,7 +21,6 @@
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
-    // Insert code here to initialize your application
     return YES;
 }
 
