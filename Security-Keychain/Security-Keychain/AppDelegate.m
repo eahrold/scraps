@@ -32,8 +32,10 @@
 }
 
 - (IBAction)setPressed:(id)sender{
+    NSLog(@"Set Pressed");
 }
 
 - (IBAction)getPressed:(id)sender{
+    NSLog(@"Get Pressed");
 }
 @end
