@@ -38,7 +38,7 @@
 
 - (IBAction)getPressed:(id)sender{
     NSLog(@"Get Pressed for %@",self.user.stringValue);
-    + (NSString *)passwordForService:(NSString *)serviceName account:(NSString *)account;
+    (NSString *)passwordForService:(NSString *)serviceName account:(NSString *)account;
 
 }
 @end
