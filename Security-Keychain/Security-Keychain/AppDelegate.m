@@ -37,8 +37,7 @@
 }
 
 - (IBAction)getPressed:(id)sender{
-    NSLog(@"Get Pressed");
     NSString *result = self.user.stringValue;
-    NSLog(@"Get Pressed %@",result);
+    NSLog(@"Get Pressed for %@",result);
 }
 @end
