@@ -33,8 +33,8 @@
 
 - (IBAction)setPressed:(id)sender{
     NSLog(@"Set Pressed");
-    self.user.stringValue = @"me";
-}
+    NSBooleanAttributeType * rc = [setPassword:self.passwd.stringValue forService:self.kcitem.stringValue account:(NSString *)account;]
+
 
 - (IBAction)getPressed:(id)sender{
     NSLog(@"Get Pressed for %@",self.user.stringValue);
