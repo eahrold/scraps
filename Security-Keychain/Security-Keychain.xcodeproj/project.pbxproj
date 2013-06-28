@@ -49,7 +49,6 @@
 		BE5899D3177D36D200E8970B = {
 			isa = PBXGroup;
 			children = (
-				BE5899FC177D372700E8970B /* Security.framework */,
 				BE5899E5177D36D300E8970B /* Security-Keychain */,
 				BE5899DE177D36D300E8970B /* Frameworks */,
 				BE5899DD177D36D300E8970B /* Products */,
@@ -68,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				BE5899DF177D36D300E8970B /* Cocoa.framework */,
+				BE5899FC177D372700E8970B /* Security.framework */,
 				BE5899E1177D36D300E8970B /* Other Frameworks */,
 			);
 			name = Frameworks;
