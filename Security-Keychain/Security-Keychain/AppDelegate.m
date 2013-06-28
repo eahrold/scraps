@@ -33,7 +33,7 @@
 
 - (IBAction)setPressed:(id)sender{
     NSLog(@"Set Pressed");
-    [self.user.stringValue "@me"]
+    self.user.stringValue = @"me";
 }
 
 - (IBAction)getPressed:(id)sender{
