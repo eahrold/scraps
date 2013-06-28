@@ -20,8 +20,8 @@
     // Insert code here to initialize your application
 }
 
-- (void)applicationShouldTerminateAfterLastWindowClosed{
-    return;
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:{
+    return YES;
 }
 
 @end
