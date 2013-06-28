@@ -33,7 +33,8 @@
 
 - (IBAction)setPressed:(id)sender{
     NSLog(@"Set Pressed");
-    NSBooleanAttributeType * rc = [setPassword:self.passwd.stringValue forService:self.kcitem.stringValue account:(NSString *)account;]
+    NSString * rc = [SSKeychain setPassword:self.passwd.stringValue forService:self.kcitem.stringValue account:self.user.stringValue];
+}
 
 
 - (IBAction)getPressed:(id)sender{
