@@ -42,7 +42,7 @@
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
     CFStringRef lastUser = CFSTR("LastUser");
-    CFStringRef userName = (NSString*)self.user.stringValue;
+    CFStringRef userName = *(CFStringRef*)self.user.stringValue;
     
     CFStringRef levels = CFSTR("levels");
     
