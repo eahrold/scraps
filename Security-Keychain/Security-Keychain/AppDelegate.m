@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreFoundation/CoreFoundation.h>
 #include "SSKeychain.h"
 
 @interface AppDelegate()
