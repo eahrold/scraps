@@ -46,10 +46,12 @@
     
     CFStringRef levels = CFSTR("levels");
     
-    NSDictionary *levels = @{
-                             @"FirstName":
+    NSDictionary *nDict = @{
+                             @"FirstName":@"eldor",
+                             @"LastName":@"noodle"
+                             };
     
-    CFMutableArrayRef* cArray=(CFMutableArrayRef*)nArray;
+    CFDictionary* cArray=(CFMutableArrayRef*)nArray;
     
     // Set up the preference.
     CFPreferencesSetAppValue(userName, colorBLUE,
