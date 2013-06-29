@@ -54,10 +54,10 @@
     CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
     
     // Set up the preference.
-    CFPreferencesSetAppValue(userName, colorBLUE,
+    CFPreferencesSetAppValue(lastUser, userName,
                              kCFPreferencesCurrentApplication);
     
-    CFPreferencesSetAppValue(levels, cArray,
+    CFPreferencesSetAppValue(levels, cDict,
                              kCFPreferencesCurrentApplication);
     
     // Write out the preference data.
