@@ -46,18 +46,18 @@
     
     CFStringRef levels = CFSTR("levels");
     
-    NSDictionary *nDict = @{
+    CFDictionaryRef *nDict = @{
                              @"FirstName":@"eldor",
                              @"LastName":@"noodle"
                              };
     
-    CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
+    //CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
     
     // Set up the preference.
     CFPreferencesSetAppValue(userName, colorBLUE,
                              kCFPreferencesCurrentApplication);
     
-    CFPreferencesSetAppValue(levels, cDict,
+    CFPreferencesSetAppValue(levels, nDict,
                              kCFPreferencesCurrentApplication);
     
     // Write out the preference data.
