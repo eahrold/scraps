@@ -41,23 +41,23 @@
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
-    CFStringRef userName = CFSTR("userName");
-    CFStringRef colorBLUE = CFSTR("mine");
+    CFStringRef lastUser = CFSTR("LastUser");
+    CFStringRef userName = CFSTR("eldor");
     
     CFStringRef levels = CFSTR("levels");
     
-    CFDictionaryRef *nDict = @{
+    NSDictionary *nDict = @{
                              @"FirstName":@"eldor",
                              @"LastName":@"noodle"
                              };
     
-    //CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
+    CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
     
     // Set up the preference.
     CFPreferencesSetAppValue(userName, colorBLUE,
                              kCFPreferencesCurrentApplication);
     
-    CFPreferencesSetAppValue(levels, nDict,
+    CFPreferencesSetAppValue(levels, cArray,
                              kCFPreferencesCurrentApplication);
     
     // Write out the preference data.
