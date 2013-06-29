@@ -42,6 +42,7 @@
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
     CFStringRef userName = CFSTR("me");
+    
     CFMutableArrayRef uname = nil;
         fn = CFSTR("eldor");
     
