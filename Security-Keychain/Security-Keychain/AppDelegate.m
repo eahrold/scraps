@@ -36,8 +36,8 @@
     if ([SSKeychain setPassword:self.passwd.stringValue forService:self.kcitem.stringValue account:self.user.stringValue]){
         NSLog(@"Keychain item created successfully");
     }
-    else
-        NSLog(@"There was a problem creating the keychain item")
+    else{
+        NSLog(@"There was a problem creating the keychain item");
     }
 }
 
