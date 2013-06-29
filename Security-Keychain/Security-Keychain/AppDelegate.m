@@ -39,7 +39,15 @@
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
-    NSLog(<#NSString *format, ...#>)
+    CFStringRef userNameKey = CFSTR("userName");
+    CFStringRef userName = CFSTR([self.user.stringValue]);
+    
+    // Set up the preference.
+    CFPreferencesSetAppValue(textColorKey, colorBLUE,
+                             kCFPreferencesCurrentApplication);
+    
+    // Write out the preference data.
+    CFPreferencesAppSynchronize(kCFPreferencesCurrentApplication);
     return YES;
 }
 
