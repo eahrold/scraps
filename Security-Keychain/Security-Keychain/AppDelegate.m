@@ -45,7 +45,9 @@
     CFStringRef colorBLUE = CFSTR("mine");
     
     CFStringRef levels = CFSTR("levels");
-    NSArray* nArray=[NSArray arrayWithObjects:@"Low", @"Medium", @"High", nil];
+    
+    NSDictionary *levels
+    
     CFMutableArrayRef* cArray=(CFMutableArrayRef*)nArray;
     
     // Set up the preference.
