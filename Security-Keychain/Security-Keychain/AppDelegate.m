@@ -41,7 +41,7 @@
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
-    CFStringRef userName = CFSTR("me");
+    CFStringRef userName = CFSTR("userName");
     CFStringRef colorBLUE = CFSTR("mine");
     
     CFStringRef levels = CFSTR("levels");
