@@ -42,7 +42,8 @@
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
     CFStringRef userName = CFSTR("me");
-    CFStringRef colorBLUE = CFSTR("mine");
+    CFMutableArrayRef uname = nil;
+        fn = CFSTR("eldor");
     
     // Set up the preference.
     CFPreferencesSetAppValue(userName, colorBLUE,
