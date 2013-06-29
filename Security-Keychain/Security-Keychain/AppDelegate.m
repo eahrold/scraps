@@ -44,14 +44,15 @@
     CFStringRef userName = CFSTR("me");
     CFStringRef colorBLUE = CFSTR("mine");
     
+    CFStringRef levels = CFSTR("levels");
     NSArray* nArray=[NSArray arrayWithObjects:@"Low", @"Medium", @"High", nil];
-    CFArray* nArray=(CFarray*)nArray;
+    CFMutableArrayRef* cArray=(CFMutableArrayRef*)nArray;
     
     // Set up the preference.
     CFPreferencesSetAppValue(userName, colorBLUE,
                              kCFPreferencesCurrentApplication);
     
-    CFPreferencesSetAppValue(userName, colorBLUE,
+    CFPreferencesSetAppValue(levels, cArray,
                              kCFPreferencesCurrentApplication);
     
     // Write out the preference data.
