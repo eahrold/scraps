@@ -46,7 +46,7 @@
     
     CFStringRef levels = CFSTR("levels");
     
-    NSDictionary *levels
+    NSDictionary *levels = @{<#key#>: <#object, ...#>}
     
     CFMutableArrayRef* cArray=(CFMutableArrayRef*)nArray;
     
