@@ -45,7 +45,7 @@
     CFStringRef colorBLUE = CFSTR("mine");
     
     // Set up the preference.
-    CFPreferencesSetAppValue(userNameKey, colorBLUE,
+    CFPreferencesSetAppValue(userName, colorBLUE,
                              kCFPreferencesCurrentApplication);
     
     // Write out the preference data.
