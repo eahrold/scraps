@@ -35,7 +35,8 @@
     NSLog(@"Set Pressed");
     if ([SSKeychain setPassword:self.passwd.stringValue forService:self.kcitem.stringValue account:self.user.stringValue]){
         NSLog(@"Keychain item created successfully");
-    else()
+    }
+    else
         NSLog(@"There was a problem creating the keychain item")
     }
 }
