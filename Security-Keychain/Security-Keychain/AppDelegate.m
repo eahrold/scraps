@@ -39,8 +39,8 @@
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
-    CFStringRef userNameKey = CFSTR("userName");
-    CFStringRef userName = CFSTR([self.user.stringValue]);
+    CFStringRef userNameKey = CFSTR("defaultTextColor");
+    CFStringRef colorBLUE = CFSTR("BLUE");
     
     // Set up the preference.
     CFPreferencesSetAppValue(textColorKey, colorBLUE,
