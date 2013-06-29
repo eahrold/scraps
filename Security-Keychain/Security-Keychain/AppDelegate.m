@@ -36,6 +36,8 @@
     if(userName !=  NULL){
         CFRelease(userName);
     }
+    
+    self.user.stringValue = userName;
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
