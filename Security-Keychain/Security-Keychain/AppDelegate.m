@@ -39,6 +39,7 @@
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
+    NSLog(<#NSString *format, ...#>)
     return YES;
 }
 
