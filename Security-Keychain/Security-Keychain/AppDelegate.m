@@ -26,7 +26,15 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    CFStringRef user = CFSTR("defaultTextColor");
+    CFStringRef user;
     
+    // Read the preference.
+    user = (CFStringRef)CFPreferencesCopyAppValue(textColorKey,
+                                                       kCFPreferencesCurrentApplication);
+    // When finished with value, you must release it
+    // CFRelease(textColor);
+
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
