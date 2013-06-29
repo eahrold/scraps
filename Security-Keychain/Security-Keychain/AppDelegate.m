@@ -26,7 +26,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    CFStringRef userNameKey = CFSTR("defaultTextColor");
+    CFStringRef userNameKey = CFSTR("userName");
     CFStringRef userName;
     
     // Read the preference.
@@ -34,7 +34,7 @@
                                                        kCFPreferencesCurrentApplication);
     // When finished with value, you must release it
     if(userName !=  NULL){
-    CFRelease(userName);
+        CFRelease(userName);
     }
 }
 
