@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <CoreFoundation/CoreFoundation.h>
+#import <Foundation/Foundation.h>
 #include "SSKeychain.h"
 
 @interface AppDelegate()
@@ -25,43 +26,57 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
-    CFStringRef userNameKey = CFSTR("userName");
-    CFStringRef userName;
+//    CFStringRef userNameKey = CFSTR("LastUser");
+//    CFStringRef userName;
+//    userName = (CFStringRef)CFPreferencesCopyAppValue(userNameKey,
+//                                                       kCFPreferencesCurrentApplication);
+//    if(userName !=  NULL){
+//        CFRelease(userName);
+//    }
+    NSUserDefaults *getDefaults = [NSUserDefaults standardUserDefaults];
+    self.user.stringValue = [getDefaults stringForKey:@"LastUser"];
+
     
-    // Read the preference.
-    userName = (CFStringRef)CFPreferencesCopyAppValue(userNameKey,
-                                                       kCFPreferencesCurrentApplication);
-    // When finished with value, you must release it
-    if(userName !=  NULL){
-        CFRelease(userName);
-    }
+    self.kcitem.stringValue = [[NSBundle mainBundle] bundleIdentifier];
     
-    self.user.stringValue = (NSString*)userName;
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
-    CFStringRef lastUser = CFSTR("LastUser");
-    CFStringRef userName = (CFStringRef)self.user.stringValue;
     
-    CFStringRef levels = CFSTR("levels");
-    
+    NSString * userName = self.user.stringValue;
     NSDictionary *nDict = @{
-                             @"FirstName":@"eldor",
-                             @"LastName":@"noodle"
-                             };
+                            @"FirstName":self.user.stringValue,
+                            @"kcItem":self.kcitem.stringValue,
+                            };
+
+    NSUserDefaults * standardUserDefaults = [NSUserDefaults standardUserDefaults];
     
-    CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
+    [standardUserDefaults setObject:userName forKey:@"LastUser"];
+    [standardUserDefaults setObject:nDict forKey:userName];
+    [standardUserDefaults synchronize];
+
     
-    // Set up the preference.
-    CFPreferencesSetAppValue(lastUser, userName,
-                             kCFPreferencesCurrentApplication);
     
-    CFPreferencesSetAppValue(levels, cDict,
-                             kCFPreferencesCurrentApplication);
-    
-    // Write out the preference data.
-    CFPreferencesAppSynchronize(kCFPreferencesCurrentApplication);
+//    CFStringRef lastUser = CFSTR("LastUser");
+//    CFStringRef userName = (CFStringRef)self.user.stringValue;
+//    
+//    
+//    NSDictionary *nDict = @{
+//                             @"FirstName":self.user.stringValue,
+//                             @"kcItem":self.kcitem.stringValue,
+//                             };
+//    
+//    CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
+//    
+//    // Set up the preference.
+//    CFPreferencesSetAppValue(lastUser, userName,
+//                             kCFPreferencesCurrentApplication);
+//    
+//    CFPreferencesSetAppValue(userName, cDict,
+//                             kCFPreferencesCurrentApplication);
+//    
+//    // Write out the preference data.
+//    CFPreferencesAppSynchronize(kCFPreferencesCurrentApplication);
     return YES;
 }
 
@@ -80,6 +95,7 @@
     NSLog(@"Get Pressed for %@",self.user.stringValue);
     NSString *rc = [SSKeychain passwordForService:self.kcitem.stringValue account:self.user.stringValue];
     NSLog(@"the password is: %@",rc);
+    self.passwd.stringValue = rc;
 
 }
 @end
