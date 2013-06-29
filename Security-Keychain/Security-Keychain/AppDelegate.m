@@ -33,8 +33,9 @@
     userName = (CFStringRef)CFPreferencesCopyAppValue(userNameKey,
                                                        kCFPreferencesCurrentApplication);
     // When finished with value, you must release it
+    if(! userName){
     CFRelease(userName);
-
+    }
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
