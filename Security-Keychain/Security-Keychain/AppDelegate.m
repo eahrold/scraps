@@ -37,7 +37,7 @@
         CFRelease(userName);
     }
     
-    self.user.stringValue = NuserName;
+    self.user.stringValue = (NSString*)userName;
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication{
