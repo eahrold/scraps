@@ -33,7 +33,7 @@
     userName = (CFStringRef)CFPreferencesCopyAppValue(userNameKey,
                                                        kCFPreferencesCurrentApplication);
     // When finished with value, you must release it
-    if(! userName){
+    if(userName ! ){
     CFRelease(userName);
     }
 }
