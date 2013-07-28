@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # Postprocessing for your info.plist.  Primarily so that we can inject your full dev certificate name.
 
 require 'cgi'
