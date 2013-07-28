@@ -7,13 +7,13 @@
 	raise "Missing required ENV values: #{missing_keys.inspect}" if missing_keys.size > 0
 
 	# SMJ_PREPROCESS_FILES is a comma-separated list of *relative* file paths to preprocess
-	#  and spit out into the SMJ_PREPROCESS_DIR (w/ the same relative paths as given)
+	#  and spit out into the PREPROCESS_DIR (w/ the same relative paths as given)
 	files_to_preprocess = ENV['PREPROCESS_FILES'].split(',').map(&:strip)
 
 
 	# Environment Cleanup
 	# -------------------
-	dummy_path = "#{ENV['BUILD_DIR']}/SMJobKitCodeSigningDummy"
+	dummy_path = "#{ENV['BUILD_DIR']}/CodeSigningDummy"
 
 	identity = ENV['CODE_SIGN_IDENTITY']
 	# If you use the generic code signing identity, chances are that it'll conflict.
