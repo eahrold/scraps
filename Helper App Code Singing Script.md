@@ -6,7 +6,7 @@
 	missing_keys = ['BUILD_DIR', 'CODE_SIGN_IDENTITY', 'PREPROCESS_FILES', 'PREPROCESS_DIR'] - ENV.keys
 	raise "Missing required ENV values: #{missing_keys.inspect}" if missing_keys.size > 0
 
-	# SMJ_PREPROCESS_FILES is a comma-separated list of *relative* file paths to preprocess
+	# PREPROCESS_FILES is a comma-separated list of *relative* file paths to preprocess
 	#  and spit out into the PREPROCESS_DIR (w/ the same relative paths as given)
 	files_to_preprocess = ENV['PREPROCESS_FILES'].split(',').map(&:strip)
 
@@ -33,7 +33,7 @@
 	# --------------------
 
 	files_to_preprocess.each do |path|
-	target_path = File.join(ENV['SMJ_PREPROCESS_DIR'], path)
+	target_path = File.join(ENV['PREPROCESS_DIR'], path)
 	FileUtils.mkpath File.dirname(target_path)
 
 	open(path) do |input|
