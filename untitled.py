@@ -71,5 +71,5 @@ username = "eldon"
 runtype = "none"
 key = fv_status["RecoveryKey"]
 
-escrowKey(key, username, runtype):
+escrowKey(key, username, runtype)
 
