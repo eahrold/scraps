@@ -53,5 +53,5 @@ def escrowKey(key, username, runtype):
             reboot = subprocess.Popen(the_command,shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE).communicate()[0]
 
 fv_status = plistlib.readPlist("/Volumes/myHome/Users/eldon/Desktop/fdesetup_output.plist")
-NSLog(u"%s" % fv_status['recovery_password'])
+NSLog(u"%s" % fv_status['RecoveryKey'])
 
