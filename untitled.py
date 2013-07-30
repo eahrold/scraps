@@ -39,8 +39,8 @@ def escrowKey(key, username, runtype):
                 FoundationPlist.writePlist(plistData, '/usr/local/crypt/recovery_key.plist')
                 os.chmod('/usr/local/crypt/recovery_key.plist',0700)
                 if runtype=="initial":
-                    the_command = "/sbin/reboot"
-            reboot = subprocess.Popen(the_command,shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE).communicate()[0]
+                    pass
+                    
     else:
         #NSLog(u"%s" % fvprefs['ServerURL'])
         ##escrow successful, if the file exists, remove it
@@ -49,9 +49,13 @@ def escrowKey(key, username, runtype):
         if os.path.exists(thePlist):
             os.remove(thePlist)
         if runtype=="initial":
-            the_command = "/sbin/reboot"
-            reboot = subprocess.Popen(the_command,shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE).communicate()[0]
+            pass
 
 fv_status = plistlib.readPlist("/Volumes/myHome/Users/eldon/Desktop/fdesetup_output.plist")
 NSLog(u"%s" % fv_status['RecoveryKey'])
+username = "eldon"
+runtype = "none"
+key = fv_status["RecoveryKey"]
+
+escrowKey(key, username, runtype):
 
