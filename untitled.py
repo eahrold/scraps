@@ -29,7 +29,7 @@ def escrowKey(key, username, runtype):
     theurl = "https://mdm.masscomm.loyno.edu/crypt/checkin/"
     serial = GetMacSerial()
     r = GetMacName()
-    mydata=[('serial',serial),('recovery_password',key),('username',username),('macname',macname)]
+    mydata=[('serial',serial),('recovery_password',key),('username',username),('macname',r)]
     mydata=urllib.urlencode(mydata)
     req = Request(theurl, mydata)
     try:
