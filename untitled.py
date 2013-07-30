@@ -42,8 +42,6 @@ def escrowKey(key, username, runtype):
                     the_command = "/sbin/reboot"
             reboot = subprocess.Popen(the_command,shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE).communicate()[0]
     else:
-        ##need some code to read in the json response from the server, and if the deta matches, display success message, or failiure message, then reboot. If not, we need to cache it on disk somewhere - maybe pull it out with facter?
-        #time to turn on filevault
         #NSLog(u"%s" % fvprefs['ServerURL'])
         ##escrow successful, if the file exists, remove it
         thePlist = '/usr/local/crypt/recovery_key.plist'
@@ -53,3 +51,7 @@ def escrowKey(key, username, runtype):
         if runtype=="initial":
             the_command = "/sbin/reboot"
             reboot = subprocess.Popen(the_command,shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE).communicate()[0]
+
+ fv_status = plistlib.readPlist("/Volumes/myHome/Users/eldon/Desktop/fdesetup_output.plist")
+            NSLog(u"%s" % fv_status['recovery_password'])
+
