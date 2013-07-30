@@ -5,7 +5,6 @@ import re
 import os
 import plistlib
 import subprocess
-import FoundationPlist
 from Foundation import *
 from urllib2 import Request, urlopen, URLError, HTTPError
 from xml.parsers import expat
