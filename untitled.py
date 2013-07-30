@@ -30,7 +30,9 @@ def escrowKey(key, username, runtype):
     serial = GetMacSerial()
     r = GetMacName()
     mydata=[('serial',serial),('recovery_password',key),('username',username),('macname',r)]
+    print(mydata)
     mydata=urllib.urlencode(mydata)
+    print(mydata)
     req = Request(theurl, mydata)
     try:
         response = urlopen(req)
