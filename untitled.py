@@ -10,6 +10,20 @@ from urllib2 import Request, urlopen, URLError, HTTPError
 from xml.parsers import expat
 import urllib
 
+def GetMacSerial():
+    """Returns the serial number for the Mac
+        """
+    the_command = "ioreg -c \"IOPlatformExpertDevice\" | awk -F '\"' '/IOPlatformSerialNumber/ {print $4}'"
+    serial = subprocess.Popen(the_command,shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE).communicate()[0]
+    serial = re.sub(r'\s', '', serial)
+    return serial
+
+def GetMacName():
+    theprocess = "scutil --get ComputerName"
+    thename = subprocess.Popen(theprocess,shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE).communicate()[0]
+    thename = thename.strip()
+    return thename
+
 def escrowKey(key, username, runtype):
     ##submit this to the server fv_status['recovery_password']
     theurl = pref('ServerURL')+"/checkin/"
