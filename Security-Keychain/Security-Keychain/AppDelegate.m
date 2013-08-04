@@ -26,13 +26,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-//    CFStringRef userNameKey = CFSTR("LastUser");
-//    CFStringRef userName;
-//    userName = (CFStringRef)CFPreferencesCopyAppValue(userNameKey,
-//                                                       kCFPreferencesCurrentApplication);
-//    if(userName !=  NULL){
-//        CFRelease(userName);
-//    }
     NSUserDefaults *getDefaults = [NSUserDefaults standardUserDefaults];
     self.user.stringValue = [getDefaults stringForKey:@"LastUser"];
 
@@ -55,29 +48,7 @@
     [standardUserDefaults setObject:nDict forKey:userName];
     [standardUserDefaults synchronize];
 
-    
-    
-//    CFStringRef lastUser = CFSTR("LastUser");
-//    CFStringRef userName = (CFStringRef)self.user.stringValue;
-//    
-//    
-//    NSDictionary *nDict = @{
-//                             @"FirstName":self.user.stringValue,
-//                             @"kcItem":self.kcitem.stringValue,
-//                             };
-//    
-//    CFDictionaryRef* cDict=(CFDictionaryRef*)nDict;
-//    
-//    // Set up the preference.
-//    CFPreferencesSetAppValue(lastUser, userName,
-//                             kCFPreferencesCurrentApplication);
-//    
-//    CFPreferencesSetAppValue(userName, cDict,
-//                             kCFPreferencesCurrentApplication);
-//    
-//    // Write out the preference data.
-//    CFPreferencesAppSynchronize(kCFPreferencesCurrentApplication);
-    return YES;
+     return YES;
 }
 
 - (IBAction)setPressed:(id)sender{
