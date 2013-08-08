@@ -26,7 +26,7 @@ def GetMacName():
 
 def escrowKey(key, username, runtype):
     ##submit this to the server fv_status['recovery_password']
-    theurl = ""
+    theurl = "https://my.server.com/crypt/checkin/"
     serial = GetMacSerial()
     r = GetMacName()
     mydata=[('serial',serial),('recovery_password',key),('username',username),('macname',r)]
