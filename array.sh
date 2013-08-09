@@ -7,6 +7,6 @@
 # 	echo $i
 # done
 
-read hello
+read -e "please enter the netboot server" hello
 
 echo $hello
