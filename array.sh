@@ -7,6 +7,7 @@
 # 	echo $i
 # done
 
-read -p "Please Specify a Netboot Server: " _setting
+read -p "Please Specify a Netboot Server's IP: " hello
+
 
 echo $hello
