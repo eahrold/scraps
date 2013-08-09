@@ -7,6 +7,6 @@
 # 	echo $i
 # done
 
-read hello "hello"
+read hello
 
 echo $hello
