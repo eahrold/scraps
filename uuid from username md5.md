@@ -12,4 +12,4 @@ in python
 and in bash
 
 	username=""
-    "md5 -s ${username} |sed -e 's/0//g' -e 's/[a-z]//g' -e 's/\\ //g'| tail -c 6"
+    "md5 -s ${username} |sed -e 's/0//g' -e 's/[a-z]//g' -e 's/\\ //g'| tail -c 7"
