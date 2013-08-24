@@ -6,7 +6,7 @@ in python
 	
 	m = hashlib.md5()
 	m.update(username)
-	print re.sub(r'[a-zAND0]',r'',m.hexdigest())[-5:]
+	print re.sub(r'[a-zAND0]',r'',m.hexdigest())[-6:]
 
 
 and in bash
