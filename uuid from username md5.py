@@ -2,7 +2,7 @@
 
 import hashlib
 import re
-string="asdf"
+string="test2"
 
 m = hashlib.md5()
 m.update(string)
