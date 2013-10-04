@@ -16,7 +16,7 @@ cecho(){
 		;;
 	esac
 	
-	if [ -z $2 ]
+	if [ -z ${2} ]
 		local MESSAGE=$1
 	else
 		local MESSAGE=$2
