@@ -20,7 +20,7 @@ echo $3
 		;;
 	esac
 	
-	if [ -z "${2}" ]
+	if [ -z "${2}" ];then
 		local MESSAGE="${1}"
 	else
 		local MESSAGE="${2}"
