@@ -1,6 +1,30 @@
 #!/bin/sh
 
 
+cread(){
+	case "$1" in
+		alert) local COLOR=$(printf "\\e[1;31m")
+		;;
+		warn|warning) local COLOR=$(printf "\\e[1;35m")
+		;;
+		attention) local COLOR=$(printf "\\e[1;32m")
+		;;
+		notice) local COLOR=$(printf "\\e[1;34m")
+		;;
+		*) local COLOR=$(printf "\\e[0;30m")
+		;;
+	esac
+	
+	if [ -z "${2}" ];then
+		local MESSAGE="${1}"
+	else
+		local MESSAGE="${2}"
+	fi
+
+	local RESET=$(printf "\\e[0m")	
+	read -e -p "${COLOR}${MESSAGE}${RESET}" VAR
+	echo $VAR
+}
 
 cecho(){	
 	case "$1" in
