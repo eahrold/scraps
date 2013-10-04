@@ -52,7 +52,7 @@ cecho attention "hello my attention"
 cecho notice "hello my notice"
 cecho "hello my none"
 
-cread alert "what is this?" MY_VAR
+cread alert "what is this?" REPLY
 
 if [[ $REPLY =~ ^[Yy]$ ]];then
 	echo yes
