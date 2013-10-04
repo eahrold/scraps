@@ -3,10 +3,6 @@
 
 
 cecho(){	
-echo $1
-echo $2
-echo $3
-
 	case "$1" in
 		alert) local COLOR=$(printf "\\e[1;31m")
 		;;
