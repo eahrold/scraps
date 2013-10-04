@@ -17,7 +17,9 @@ cread(){
 	
 	local MESSAGE="${2}"
 	local RESET=$(printf "\\e[0m")	
-	read -e -p "${COLOR}${MESSAGE}${RESET} " VAR
+	if [ -z ${3} ];then
+		read -e -p "${COLOR}${MESSAGE}${RESET} "
+	
 	eval $3="'$VAR'"
 	
 }
@@ -52,7 +54,7 @@ cecho attention "hello my attention"
 cecho notice "hello my notice"
 cecho "hello my none"
 
-cread alert "what is this?" MY_VAR
+cread alert "what is this?" REPLY
 
 echo $MY_VAR
 
