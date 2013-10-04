@@ -3,7 +3,7 @@
 
 
 cecho(){	
-	case "$2" in
+	case "$1" in
 		alert) local COLOR=$(printf "\\e[1;31m")
 		;;
 		warn|warning) local COLOR=$(printf "\\e[1;35m")
@@ -16,13 +16,13 @@ cecho(){
 		;;
 	esac
 		
-	local MESSAGE=$1
+	local MESSAGE=$2
 	local RESET=$(printf "\\e[0m")	
-	echo "${COLOR}${MESSAGE}${RESET}"	
+	echo "${COLOR}${MESSAGE}${RESET}{$3}"	
 }
 
-cecho "hello my alert" alert
-cecho "hello my warn" warn
-cecho "hello my attention" attention
-cecho "hello my notice" notice
+cecho alert "hello my alert"
+cecho warn "hello my warn"
+cecho attention "hello my attention"
+cecho notice "hello my notice"
 cecho "hello my none"
