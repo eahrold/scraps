@@ -58,7 +58,6 @@ if [[ $REPLY =~ ^[Yy]$ ]];then
 	echo yes
 elif [[ $REPLY =~ ^[Nn]$ ]];then
 	echo no
-	
 elif [[ $REPLY =~ ^[Mm]$ ]];then
 	echo maybe
 fi
