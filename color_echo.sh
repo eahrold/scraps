@@ -17,12 +17,10 @@ cread(){
 	
 	local MESSAGE="${2}"
 	local RESET=$(printf "\\e[0m")	
-	if [ -z ${3} ];then
-		read -e -p "${COLOR}${MESSAGE}${RESET} "
-	else
-		read -e -p "${COLOR}${MESSAGE}${RESET} " VAR
-		eval $3="'$VAR'"
-	fi
+	
+	read -e -p "${COLOR}${MESSAGE}${RESET} " VAR
+	
+	eval $3="'$VAR'"
 	
 }
 
