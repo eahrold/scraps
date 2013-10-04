@@ -24,6 +24,7 @@ echo $3
 		local MESSAGE="${1}"
 	else
 		local MESSAGE="${2}"
+	fi
 
 	local RESET=$(printf "\\e[0m")	
 	echo "${COLOR}${MESSAGE}${RESET}${3}"	
