@@ -53,4 +53,16 @@ cecho notice "hello my notice"
 cecho "hello my none"
 
 cread alert "what is this?" MY_VAR
-echo $MY_VAR
+
+if [[ $REPLY =~ ^[Ss]$ ]];then
+	USER_NAME=$(who | grep console | head -1 |awk '{print $1}')
+	GROUP_NAME=$(dscl . read /Users/${USER_NAME} PrimaryGroupID)
+	RC=1
+elif [[ $REPLY =~ ^[Ww]$ ]];then
+	USER_NAME='www'
+	GROUP_NAME='www'
+	RC=1
+elif [[ $REPLY =~ ^[Nn]$ ]];then
+	make_user_and_group
+	RC=1
+fi
