@@ -2,7 +2,7 @@
 
 
 cread(){
-	case "$3" in
+	case "$1" in
 		alert) local COLOR=$(printf "\\e[1;31m")
 		;;
 		warn|warning) local COLOR=$(printf "\\e[1;35m")
@@ -21,7 +21,8 @@ cread(){
 
 	local RESET=$(printf "\\e[0m")	
 	read -e -p "${COLOR}${MESSAGE}${RESET}" VAR
-	$1=${VAR}
+	$3=${VAR}
+	
 }
 
 cecho(){	
