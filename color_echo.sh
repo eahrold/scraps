@@ -16,10 +16,10 @@ cecho(){
 		;;
 	esac
 	
-	if [ -z ${2} ]
-		local MESSAGE=${1}
+	if [ -z "${2}" ]
+		local MESSAGE="${1}"
 	else
-		local MESSAGE=${2}
+		local MESSAGE="${2}"
 
 	local RESET=$(printf "\\e[0m")	
 	echo "${COLOR}${MESSAGE}${RESET}" ${3}	
