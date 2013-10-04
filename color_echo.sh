@@ -17,12 +17,12 @@ cecho(){
 	esac
 	
 	if [ -z ${2} ]
-		local MESSAGE=$1
+		local MESSAGE=${1}
 	else
 		local MESSAGE=$2
 
 	local RESET=$(printf "\\e[0m")	
-	echo "${COLOR}${MESSAGE}${RESET}{$3}"	
+	echo "${COLOR}${MESSAGE}${RESET}${3}"	
 }
 
 cecho alert "hello my alert" "what's new"
