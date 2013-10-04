@@ -58,8 +58,6 @@ cecho "hello my none"
 
 cread alert "what is this?"
 
-echo $MY_VAR
-
 if [[ $REPLY =~ ^[Yy]$ ]];then
 	echo yes
 elif [[ $REPLY =~ ^[Nn]$ ]];then
