@@ -2,7 +2,7 @@
 
 
 cread(){
-	case "$1" in
+	case "$3" in
 		alert) local COLOR=$(printf "\\e[1;31m")
 		;;
 		warn|warning) local COLOR=$(printf "\\e[1;35m")
@@ -15,15 +15,13 @@ cread(){
 		;;
 	esac
 	
-	if [ -z "${2}" ];then
-		local MESSAGE="${1}"
-	else
-		local MESSAGE="${2}"
+	
+	local MESSAGE="${2}"
 	fi
 
 	local RESET=$(printf "\\e[0m")	
 	read -e -p "${COLOR}${MESSAGE}${RESET}" VAR
-	echo $VAR
+	$1=${VAR}
 }
 
 cecho(){	
@@ -55,3 +53,4 @@ cecho warn "hello my warn"
 cecho attention "hello my attention"
 cecho notice "hello my notice"
 cecho "hello my none"
+
