@@ -1,9 +1,7 @@
 #!/bin/sh
 
 
-cread(){
-    local  __resultvar=$3
-	
+cread(){	
 	case "$1" in
 		alert) local COLOR=$(printf "\\e[1;31m")
 		;;
