@@ -18,7 +18,7 @@ cread(){
 	local MESSAGE="${2}"
 	local RESET=$(printf "\\e[0m")	
 	read -e -p "${COLOR}${MESSAGE}${RESET} " VAR
-	eval $3="'$VAR'"
+	#eval $3="'$VAR'"
 	
 }
 
@@ -54,10 +54,10 @@ cecho "hello my none"
 
 cread alert "what is this?" REPLY
 
-if [[ $REPLY =~ ^[Yy*]$ ]];then
+if [[ $REPLY =~ ^[Yy]*$ ]];then
 	echo yes
-elif [[ $REPLY =~ ^[Nn]$ ]];then
+elif [[ $REPLY =~ ^[Nn]*$ ]];then
 	echo no
-elif [[ $REPLY =~ ^[Mm]$ ]];then
+elif [[ $REPLY =~ ^[Mm]*$ ]];then
 	echo maybe
 fi
