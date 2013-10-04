@@ -26,7 +26,7 @@ cecho(){
 	case "$1" in
 		alert) local COLOR=$(printf "\\e[1;31m")
 		;;
-		warn|warning) local COLOR=$(printf "\\e[1;35m")
+		warn) local COLOR=$(printf "\\e[1;35m")
 		;;
 		attention) local COLOR=$(printf "\\e[1;32m")
 		;;
