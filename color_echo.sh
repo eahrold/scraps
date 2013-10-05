@@ -25,18 +25,17 @@ cread(){
 }
 
 cecho(){	
-	case "$1" in
-		alert) local COLOR=$(printf "\\e[1;31m")
-		;;
-		warn) local COLOR=$(printf "\\e[1;35m")
-		;;
-		attention) local COLOR=$(printf "\\e[1;32m")
-		;;
-		notice) local COLOR=$(printf "\\e[1;34m")
-		;;
-		*) local COLOR=$(printf "\\e[0;30m")
-		;;
-	esac
+case "$1" in
+	red|alert) local COLOR=$(printf "\\e[1;31m");;
+	green|attention) local COLOR=$(printf "\\e[1;32m");;
+	yellow|warn) local COLOR=$(printf "\\e[1;33m");;
+	blue|question) local COLOR=$(printf "\\e[1;34m");;
+	purple|info) local COLOR=$(printf "\\e[1;35m");;
+	cyan|notice) local COLOR=$(printf "\\e[1;36m");;
+	bold|prompt) local COLOR=$(printf "\\e[1;30m");;
+	*) local COLOR=$(printf "\\e[0;30m");;
+esac
+	
 	
 	if [ -z "${2}" ];then
 		local MESSAGE="${1}"
