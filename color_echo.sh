@@ -48,6 +48,8 @@ cecho(){
 }
 
 cecho alert "hello my alert:" "what's new"
+cecho prompt "hello my prompt:" "what's new"
+cecho question "what's up"
 cecho warn "hello my warn"
 cecho attention "hello my attention"
 cecho notice "hello my notice"
