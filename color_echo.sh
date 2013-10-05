@@ -3,10 +3,8 @@
 
 cread(){	
 	case "$1" in
-		red|alert) local COLOR=$(printf "\\e[1;31m")
-		;;
-		green|attention) local COLOR=$(printf "\\e[1;32m")
-		;;
+		red|alert) local COLOR=$(printf "\\e[1;31m");;
+		green|attention) local COLOR=$(printf "\\e[1;32m");;
 		yellow|warn) local COLOR=$(printf "\\e[1;33m")
 		;;
 		blue|question) local COLOR=$(printf "\\e[1;34m")
