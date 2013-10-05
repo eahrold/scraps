@@ -21,7 +21,6 @@ cread(){
 		read -e -p "${COLOR}${MESSAGE}${RESET} " VAR
 		eval $3="'$VAR'"
 	fi
-	
 }
 
 cecho(){	
