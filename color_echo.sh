@@ -9,7 +9,7 @@ cread(){
 		;;
 		yellow|info) local COLOR=$(printf "\\e[1;33m")
 		;;
-		blue|notice) local COLOR=$(printf "\\e[1;34m")
+		blue|question) local COLOR=$(printf "\\e[1;34m")
 		;;
 		purple|warn) local COLOR=$(printf "\\e[1;35m")
 		;;
