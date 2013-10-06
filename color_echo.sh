@@ -46,7 +46,7 @@ cecho(){
 	echo "${COLOR}${MESSAGE}${RESET} ${*:3}"	
 }
 
-cecho alert "hello my alert:" "what's new"
+cecho alert "hello my alert:" what\'s new
 cecho prompt "hello my prompt:" "what's new"
 cecho question "what's up"
 cecho warn "hello my warn"
