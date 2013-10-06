@@ -43,7 +43,7 @@ cecho(){
 	fi
 
 	local RESET=$(printf "\\e[0m")	
-	echo "${COLOR}${MESSAGE}${RESET} ${*:3}"	
+	echo "${COLOR}${MESSAGE}${RESET} ${3}"	
 }
 
 cecho alert "hello my alert:" "what's new"
