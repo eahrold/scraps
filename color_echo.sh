@@ -59,7 +59,7 @@ cread alert "are you ready (y/n/m)?"
 if [[ $REPLY =~ ^[Yy]$ ]];then
 	cecho info yes
 elif [[ $REPLY =~ ^[Nn]$ ]];then
-	cecho no
+	cecho blue no
 elif [[ $REPLY =~ ^[Mm]$ ]];then
-	echo maybe
+	cecho green maybe
 fi
