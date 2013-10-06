@@ -39,14 +39,14 @@ cecho(){
 	if [ -z "${2}" ];then
 		local MESSAGE="${1}"
 	else
-		local MESSAGE="${*:2}"
+		local MESSAGE="${2}"
 	fi
 
 	local RESET=$(printf "\\e[0m")	
-	echo "${COLOR}${MESSAGE}${RESET}"	
+	echo "${COLOR}${MESSAGE}${RESET} ${3}"	
 }
 
-cecho alert "hello my alert:" what\'s new
+cecho alert "hello my alert:" "what's new"
 cecho prompt "hello my prompt:" "what's new"
 cecho question "what's up"
 cecho warn "hello my warn"
@@ -54,12 +54,12 @@ cecho attention "hello my attention"
 cecho notice "hello my notice"
 cecho "hello my none"
 
-cread alert "what is this?"
+cread alert "are you ready (y/n)?"
 
 if [[ $REPLY =~ ^[Yy]$ ]];then
-	echo yes
+	cecho yes
 elif [[ $REPLY =~ ^[Nn]$ ]];then
-	echo no
+	cecho no
 elif [[ $REPLY =~ ^[Mm]$ ]];then
 	echo maybe
 fi
