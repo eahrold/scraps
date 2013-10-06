@@ -57,9 +57,9 @@ cecho "hello my none"
 cread alert "are you ready (y/n/m)?"
 
 if [[ $REPLY =~ ^[Yy]$ ]];then
-	cecho info yes
+	cecho green yes
 elif [[ $REPLY =~ ^[Nn]$ ]];then
-	cecho blue no
+	cecho red no
 elif [[ $REPLY =~ ^[Mm]$ ]];then
 	cecho green maybe
 fi
