@@ -39,7 +39,7 @@ cecho(){
 	if [ -z "${2}" ];then
 		local MESSAGE="${1}"
 	else
-		local MESSAGE="${2}"
+		local MESSAGE="${*:2}"
 	fi
 
 	local RESET=$(printf "\\e[0m")	
