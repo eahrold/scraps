@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo -n "          "
+echo -e '\E[37;44m'"\033[1mContact List\033[0m"
+                                        # White on blue background
 
 cread(){	
 	case "$1" in
@@ -61,5 +64,5 @@ if [[ $REPLY =~ ^[Yy]$ ]];then
 elif [[ $REPLY =~ ^[Nn]$ ]];then
 	cecho red no
 elif [[ $REPLY =~ ^[Mm]$ ]];then
-	cecho green maybe
+	cecho yellow maybe
 fi
