@@ -1,8 +1,5 @@
 #!/bin/sh
 
-echo -n "          "
-echo -e '\E[37;44m'"\033[1mContact List\033[0m"
-                                        # White on blue background
 
 cread(){	
 	case "$1" in
