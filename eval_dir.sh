@@ -5,7 +5,7 @@ set -x
 eval_dir(){	 
 # pass the name of the variable you want to eval
 # so you would pass MYVAR rather than $MYVAR
-	eval local __myvar=${!1}
+eval local __myvar=${!1}
 	if [ $? == 0 ]; then
 		local __tilda=$(echo ${__myvar} | cut -c1)
 		if [ ${__tilda} == '~' ]; then
