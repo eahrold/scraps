@@ -22,11 +22,12 @@ def github_latest_release3(user,repo):
     DEST=str(u'https://api.github.com/repos/%s/%s/releases' % (user,repo))
     data = json.load(urllib2.urlopen(DEST))
     try:
-    	rdata = data[0].get('assets')[0].get('browser_download_url')
+    	rdata = data[0]
         print "here's rdata %s" % rdata
         assets = rdata['assets']
         print "here's assets %s" %assets
         
+        # .get('assets')[0].get('browser_download_url')
     except:
     	return None
     return latest_release
