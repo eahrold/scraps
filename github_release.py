@@ -23,9 +23,9 @@ def github_latest_release3(user,repo):
     data = json.load(urllib2.urlopen(DEST))
     try:
     	rdata = data[0].get('assets')[0].get('browser_download_url')
-        print rdata
+        print "here's rdata %s" % rdata
         assets = rdata['assets']
-        print assets
+        print "here's assets %s" %assets
         
     except:
     	return None
